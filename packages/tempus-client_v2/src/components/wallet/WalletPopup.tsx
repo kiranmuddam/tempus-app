@@ -56,6 +56,8 @@ const WalletPopup: FC<WalletPopupProps> = ({ anchorElement, account, chainName, 
         return `https://etherscan.io/address/${account}`;
       case 'fantom-mainnet':
         return `https://ftmscan.com/address/${account}`;
+      case 'candle':
+        return `https://candleexplorer.com/address/${account}`;
       default:
         return `https://${config.networkName}.etherscan.io/address/${account}`;
     }

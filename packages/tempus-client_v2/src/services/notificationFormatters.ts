@@ -124,6 +124,9 @@ export const generateEtherscanLink = (tx: string, chainName: Chain) => {
   if (config.networkName === 'fantom-mainnet') {
     return `https://ftmscan.com/tx/${tx}`;
   }
+  if (config.networkName === 'candle') {
+    return `https://candleexplorer.com/tx/${tx}`;
+  }
   return `https://${config.networkName}.etherscan.io/tx/${tx}`;
 };
 

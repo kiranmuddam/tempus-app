@@ -15,7 +15,7 @@ const en: { [word in Words]: string } = {
   changeNetworkRejected: 'Request to change network rejected by user',
   changeNetworkRejectedExplain: 'In order to use the app, please connect to a supported network',
   unsupportedNetwork: 'Unsupported wallet network',
-  unsupportedNetworkExplain: 'We support Ethereum and Fantom networks only',
+  unsupportedNetworkExplain: 'We support Ethereum, Candle and Fantom networks only',
   walletConnectConnected: 'WalletConnect connected',
   errorConnectingWallet: 'Error connecting wallet',
   viewRecentTransactions: 'View recent transactions',

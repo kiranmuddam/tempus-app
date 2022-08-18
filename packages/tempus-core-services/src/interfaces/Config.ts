@@ -15,9 +15,9 @@ export interface ChainConfig {
    * Average block time on chain in seconds.
    */
   averageBlockTime: number;
-  nativeToken: 'ETH' | 'FTM';
+  nativeToken: 'ETH' | 'FTM' | 'CNDL';
   nativeTokenPrecision: number;
-  blockExplorerName: 'Etherscan' | 'FTMScan';
+  blockExplorerName: 'Etherscan' | 'FTMScan' | 'Candle Explorer';
   blockExplorerUrl: string;
 }
 

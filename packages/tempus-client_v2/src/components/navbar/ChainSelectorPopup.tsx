@@ -84,6 +84,7 @@ const ChainSelectorPopup: FC<ChainSelectorPopupProps> = ({
   const ethereumSelected = userWalletChain === 'ethereum';
   const fantomSelected = userWalletChain === 'fantom';
   const ethereumForkSelected = userWalletChain === 'ethereum-fork';
+  const candleSelected = userWalletChain === 'candle';
 
   if (!open) {
     return null;
@@ -114,6 +115,18 @@ const ChainSelectorPopup: FC<ChainSelectorPopupProps> = ({
             {fantomSelected && <TickIcon />}
           </div>
           <TokenIcon ticker="FANTOM" width={24} height={24} vectorWidth={24} vectorHeight={24} />
+        </button>
+        <Spacer size={12} />
+        <button
+          className={`tc__chainSelectorPopup-button ${candleSelected ? 'selected' : ''}`}
+          onClick={() => onChainSelect('candle')}
+        >
+          <div className="tc__chainSelectorPopup-button__label">
+            <Typography variant="button-text">Candle</Typography>
+            <Spacer size={12} />
+            {candleSelected && <TickIcon />}
+          </div>
+          <TokenIcon ticker="CNDL" width={24} height={24} vectorWidth={24} vectorHeight={24} />
         </button>
         {process.env.REACT_APP_SHOW_DEV_NETWORKS === 'true' && (
           <>

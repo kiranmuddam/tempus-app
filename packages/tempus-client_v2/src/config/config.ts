@@ -3,6 +3,7 @@ import { Config } from 'tempus-core-services';
 const ETHEREUM_MAINNET_ALCHEMY_KEY = process.env.REACT_APP_MAINNET_ALCHEMY_KEY || '';
 const FANTOM_MAINNET_RPC_ENDPOINT = process.env.REACT_APP_FANTOM_ENDPOINT || '';
 const REACT_APP_ETHEREUM_FORK_RPC = process.env.REACT_APP_ETHEREUM_FORK_RPC || '';
+const REACT_APP_CANDLE_RPC = process.env.REACT_APP_CANDLE_RPC || '';
 
 const config: Config = {
   ethereum: {
@@ -374,6 +375,24 @@ const config: Config = {
     nativeTokenPrecision: 18,
     blockExplorerName: 'Etherscan',
     blockExplorerUrl: 'https://etherscan.io/',
+  },
+  candle: {
+    tempusPools: [
+    ],
+    statisticsContract: '0xe552369a1b109b1eeebf060fcb6618f70f9131f7',
+    tempusControllerContract: '0x039557b8f8f53d863f534C4dFF01d8A3467d26A0',
+    vaultContract: '0x6f419298Ad53f82BA8dFFa9B34F9C7888b43BB13',
+    lidoOracle: '0x442af784a788a5bd6f42a01ebe9f287a871243fb',
+    publicNetworkUrl: REACT_APP_CANDLE_RPC,
+    privateNetworkUrl: REACT_APP_CANDLE_RPC,
+    networkName: 'candle',
+    alchemyKey: ETHEREUM_MAINNET_ALCHEMY_KEY,
+    chainId: 534,
+    averageBlockTime: 13.2,
+    nativeToken: 'CNDL',
+    nativeTokenPrecision: 18,
+    blockExplorerName: 'Candle Explorer',
+    blockExplorerUrl: 'https://candleexplorer.com',
   },
 };
 

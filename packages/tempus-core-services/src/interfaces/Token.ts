@@ -17,6 +17,7 @@ export type Ticker =
   | 'RSPT'
   | 'YEARN'
   | 'FANTOM'
+  | 'CNDL'
   | 'USDT'
   | 'fUSDT'
   | 'BTC'

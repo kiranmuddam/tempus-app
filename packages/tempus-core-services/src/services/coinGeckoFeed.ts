@@ -12,9 +12,9 @@ const backingTokenToCoingeckoIdMap = new Map<string, string>([
   ['fUSDT', 'tether'],
   ['YFI', 'yearn-finance'],
   ['FTM', 'fantom'],
-  ['FTM', 'fantom'],
   ['WBTC', 'wrapped-btc-wormhole'],
   ['WETH', 'weth'],
+  ['CNDL', 'candle'],
 ]);
 
 const coinGeckoCache = new Map<string, { promise: Promise<any>; cachedAt: number }>();
